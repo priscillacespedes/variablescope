@@ -3,6 +3,12 @@ Variable scope is a set of rules that define which parts of your code can access
 It's what allows us to reuse variable names at different points in our code, without things breaking.
 Global scope that  can be retrieved and altered anywhere in your code base.
 Block scope is only accessible within the function's block of instructions.
+When you declare a variable in the global scope, it is available everywhere in your code. 
+Any variable that is declared outside of a function in JavaScript has global scope.
+That means that it is only accessible within the function's block of instructions. 
+When the function has finished executing, the variable disappears.
+Crucially, when we create and assign a value to a block scoped variable, 
+the global variable is untouched. 
 
 Why are global variables avoided?
 Because the code becomes bug prone and harder to collaborate on and they
